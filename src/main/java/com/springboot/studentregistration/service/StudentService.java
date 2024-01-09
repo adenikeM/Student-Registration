@@ -5,6 +5,7 @@ import com.springboot.studentregistration.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class StudentService {
@@ -16,5 +17,7 @@ public class StudentService {
     public List<Student> getAllStudent(){
         return studentRepository.findAll();
     }
-
+    public Optional<Student> getStudent(Integer id){
+        return studentRepository.findById(id);
+    }
 }
