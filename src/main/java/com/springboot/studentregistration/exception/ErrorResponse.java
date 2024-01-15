@@ -36,7 +36,7 @@ public class ErrorResponse {
     }
     public static ErrorResponse buildErrorResponse(String description, HttpStatus status){
         return new ErrorResponse()
-                .setErrorCode(status.value())
+                .setMessage(status.getReasonPhrase())
                 .setErrorCode(status.value())
                 .setDescription(description);
     }
