@@ -26,4 +26,3 @@ FEATURES
 
 . Delete Student
 
-. Delete student 
